@@ -1,5 +1,7 @@
 CMSC 100  
 Lab Exercise 3 - Importing and Exporting
+Author: Baron Paulo D. Regoso
+Date Finished: 03-17-2023 00:15 AM 
 
 Program Specifications:
 Create a JavaScript file called functions.js that exports the following 2 functions:
@@ -14,7 +16,8 @@ Create a JavaScript file called functions.js that exports the following 2 functi
         returns: “aturing5133f34e”
 
     2. addAccount()
-        Input parameter: An array with the following contents: first name (string), last name (string), email (string), age (number)
+        Input parameter: An array with the following contents: first name (string), last name (string), 
+        email (string), age (number)
 
         e.g addAccount([“Alan”, ”Turing”, “aturing@w3c.com”, 58]);
 
