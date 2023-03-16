@@ -10,13 +10,13 @@ function generateUniqueID(fname, lname){
 }
 
 function addAccount(arr){
-    if(arr.length == 4){ 
-        if(arr[0] != "" && arr[1] != "" && arr[2] != ""){ 
-            if(validator.isEmail(arr[2])){ 
-                if(arr[arr.length-1] >= 18){ 
-                    
-                    let str = arr.join(",") + "," + generateUniqueID(arr[0], arr[1])
-                    appendFileSync("users.txt", str+"\n"); 
+    if(arr.length == 4){ // arr must have complete and appropriate no. of elements
+        if(arr[0] != "" && arr[1] != "" && arr[2] != ""){ // array str contents must not be empty
+            if(validator.isEmail(arr[2])){ // validate email input
+                if(arr[arr.length-1] >= 18){ // age must pass restriction
+                    // save into new line of file
+                    let str = arr.join(",") + "," + generateUniqueID(arr[0], arr[1]) // join array contents and add generated id
+                    appendFileSync("users.txt", str+"\n"); // use module for writing
                     return true;
                 } 
             }
