@@ -25,4 +25,4 @@ function addAccount(arr){
     return false;
 }
 
-addAccount(["Alan", "Turing", "aturing@w3c.com", 58]);
+export default { addAccount } // ES Module was used

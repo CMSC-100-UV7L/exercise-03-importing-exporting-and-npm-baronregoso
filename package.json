@@ -1,0 +1,8 @@
+{
+    "name": "Exercise 3",
+    "dependencies": {
+        "uuid": "^9.0.0",
+        "validator": "^13.9.0"
+    },
+    "type": "module"
+}
